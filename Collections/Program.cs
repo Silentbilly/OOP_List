@@ -138,7 +138,7 @@ namespace Collections
     // Гитара.
     class Guitar : Stringed
     {
-        public string typeOfGuitar;
+        private string typeOfGuitar;
         public Guitar(string deckMaterial, string stringMaterial, string typeOfGuitar, string brand, string origin, int price)
         {
             this.typeOfGuitar = typeOfGuitar;
