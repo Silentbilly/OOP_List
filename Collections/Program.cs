@@ -10,14 +10,14 @@ namespace Collections
     {
         public string brand { get; set; }
         public string origin { get; set; }
-        public string userInterface { get; set; }
-        public string range { get; set; }
-        public bool modern { get; set; }
-        public float length { get; set; }
-        public float weight { get; set; }
+        protected string userInterface { get; set; }
+        protected string range { get; set; }
+        protected bool modern { get; set; }
+        protected float length { get; set; }
+        protected float weight { get; set; }
         public float price { get; set; }
-        public int age { get; set; }
-        public double volume { get; set; }
+        protected int age { get; set; }
+        protected double volume { get; set; }
         public abstract void GetInfo();
         public abstract void BrandSticker();
     }
@@ -108,7 +108,7 @@ namespace Collections
             this.range = range;
             this.price = price;
         }
-        public Didgeridoo(string family, string brand, string origin, string range, int price) : this(family, brand, origin, range, "wood", price)
+        public Didgeridoo(string family, string brand, string origin, string range, int price) : this(family, brand, origin, range, "wood",  price)
         {
             this.family = family;
             this.brand = brand;
